@@ -1,9 +1,5 @@
-using System;
-using System.Collections.Generic;
-
-using Grasshopper;
 using Grasshopper.Kernel;
-using Rhino.Geometry;
+using System;
 
 namespace UnitConvertor
 {
@@ -18,7 +14,7 @@ namespace UnitConvertor
         /// </summary>
         public MMtoInchComponent()
           : base("MMtoInchConvertor", "MI",
-            "Conerts Millimeters to Inch",
+            "Conerts Millimeters to Inch 1",
             "UnitConverter", "Utilities")
         {
         }
@@ -28,7 +24,7 @@ namespace UnitConvertor
         /// </summary>
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
-            pManager.AddNumberParameter("Millimeters", "MM", "Value in Millimeters", GH_ParamAccess.item);
+            pManager.AddNumberParameter("Millimeters", "MM1", "Value in Millimeters", GH_ParamAccess.item);
 
         }
 
